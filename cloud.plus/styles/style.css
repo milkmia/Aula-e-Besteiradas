@@ -1,0 +1,44 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-terciaria: #A27B5C;
+    --cor-quaternaria: #3F4E4F;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.principal {
+    background-image: url("../assex/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    display: block;
+}
+
+.botao__secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-secundaria)
+}
