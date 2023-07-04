@@ -4,10 +4,10 @@
 @import url('https://fonts.cdnfonts.com/css/koch-fette-deutsche-schrift');
 
 :root {
-    --cor-primaria: #2C3639;
-    --cor-secundaria: #DCD7C9;
-    --cor-terciaria: #A27B5C;
-    --cor-quaternaria: #3F4E4F;
+    --cor-primaria: #41444B;
+    --cor-secundaria: #DFD8C8;
+    --cor-terciaria: #BBBB99;
+    --cor-quaternaria: #52575D;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -112,7 +112,7 @@ body {
     gap: 10px;
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background-color: var(--cor-quaternaria);
     color: var(--cor-terciaria);
 }
