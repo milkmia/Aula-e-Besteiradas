@@ -1,0 +1,60 @@
+.cabecalho {
+    background-color: var(--cor-terciaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+ }
+
+ .container__botao {
+    display: none;
+ }
+
+ .container__imagem {
+    padding: 0.3em;
+ }
+
+.cabecalho__menu-hamburguer {
+    width: 48px;
+    height: 48px;
+    background-image: url("../assex/menu.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.lista-menu__titulo {
+    color: var(--cor-quaternaria);
+    font-weight: 700;
+}
+
+.lista-menu__titulo, 
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--cor-terciaria);
+}
+
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+
+.lista-menu__link {
+    text-decoration: none;
+    background: var(--cor-secundaria);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
