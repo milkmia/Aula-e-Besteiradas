@@ -1,13 +1,20 @@
 @import url("header.css");
 @import url("banner.css");
 @import url("carrossel.css");
+@import url("card.css");
+@import url("topicos.css");
+@import url("contato.css");
+@import url("rodape.css");
 
 :root {
     --cor-primaria: #e0dad3;
     --cor-secundaria: linear-gradient(97.54deg, #7F1A2C, #e26c6c);
     --cor-terciaria: #EFEEF1;
     --cor-quaternaria: #35449c;
+    --cor-quinaria: #7F1A2C;
     --fonte-principal: "Poppins";
+    --fonte-logo: "Josefin Sans";
+    --cor: #000000;
 }
 
 body {
