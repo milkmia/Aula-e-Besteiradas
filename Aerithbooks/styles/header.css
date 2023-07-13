@@ -28,6 +28,14 @@
     background-position: center;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburguer {
+    background-image: url("../assex/menu_black_24dp 1.svg");
+}
+
+.container__botao:checked ~ .container__rotulo {
+    background: var(--cor-secundaria);
+}
+
 .lista-menu {
     display: none;
     position: absolute;
@@ -64,6 +72,10 @@
 }
 
 .opcoes {
+    display: none;
+}
+
+.container__texto {
     display: none;
 }
 
@@ -114,4 +126,42 @@
         width: auto;
     }
 
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--cor-secundaria);
+        color: var(--cor-terciaria);
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    .lista-menu__item:hover {
+        background: var(--cor-secundaria);
+    }
+
+    .lista-menu__item:hover > .lista-menu__link {
+        -webkit-text-fill-color: var(--cor-terciaria);
+    }
+    
+}
+
+@media screen and (min-width: 1728px) {
+    .container__texto {
+        display: block;
+    }
+    
+    .cabecalho {
+        padding: 0 2em;
+    }
+    
+    .opcoes {
+        margin-right: auto;
+    }
+    
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--cor);
+    }
 }
