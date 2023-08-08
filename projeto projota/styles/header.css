@@ -1,0 +1,12 @@
+
+.header {
+    background-color: var(--cor-do-header);
+    padding: 3em;
+    margin: 1.5em 7em 0.3em 7em;
+}
+
+.header__imagem {
+    width: 150px;
+    display: flex;
+    
+}
